@@ -43,4 +43,35 @@ document.addEventListener('DOMContentLoaded', function() {
         section.classList.add('fade-in-section');
         observer.observe(section);
     });
+
+
+
+
+    // Ofuscación de Email
+    const user = 'publicmailgithubpages'; // Parte antes de la @
+    const domain = 'gmail.com';   // Parte después de la @
+    const emailLink = document.getElementById('email-link');
+    const feedback = document.getElementById('email-feedback');
+
+    if (emailLink) {
+        emailLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const fullEmail = `${user}@${domain}`;
+            
+            // 1. Copiar al portapapeles
+            navigator.clipboard.writeText(fullEmail).then(() => {
+                // Feedback visual
+                feedback.style.opacity = '1';
+                setTimeout(() => {
+                    feedback.style.opacity = '0';
+                }, 2000);
+            });
+
+            // 2. Abrir cliente de correo (opcional, si prefieres solo copiar, borra esta línea)
+            window.location.href = `mailto:${fullEmail}`;
+        });
+    }
+
+    
 });
