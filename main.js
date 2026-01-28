@@ -28,16 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
         
-        // Background change on scroll
-        if (currentScroll > 50) {
-            navbar.style.background = 'rgba(10, 14, 26, 0.95)';
-            navbar.style.borderBottom = '1px solid rgba(45, 55, 72, 0.8)';
-            navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)';
-        } else {
-            navbar.style.background = 'rgba(10, 14, 26, 0.8)';
-            navbar.style.borderBottom = '1px solid rgba(45, 55, 72, 0.5)';
-            navbar.style.boxShadow = 'none';
-        }
+
         
         lastScroll = currentScroll;
     });
@@ -229,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 0;
             left: 0;
             height: 3px;
-            background: linear-gradient(135deg, #667eea 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #e6e7ea 0%, #e5edfa 100%);
             z-index: 10000;
             transition: width 0.1s ease;
         `;
