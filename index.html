@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Gradient Background -->
+    <div class="gradient-bg"></div>
+    
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">&lt;R/&gt;</a>
+            <a class="navbar-brand" href="#">
+                <span class="brand-bracket">&lt;</span>R<span class="brand-bracket">/&gt;</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,215 +27,318 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
-                    <li class="nav-item"><a class="nav-link btn-contact" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link nav-contact" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero d-flex align-items-center">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <span class="badge-role mb-3">Ingeniero de Sistemas (Pensum Cerrado)</span>
-                    <h1 class="display-3 fw-bold mb-3">Ramón Terraza</h1>
-                    <h2 class="h4 text-secondary mb-4">Desarrollo Full Stack | Backend & Frontend</h2>
-                    <p class="lead mb-5 text-muted description">
-                        Experiencia en arquitectura backend y frontend, sistemas de gestión y consumo de APIs. 
-                        Postgrado en Desarrollo de Software (2025). Experiencia en arquitecturas cliente-servidor y bases de datos relacionales.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#experience" class="btn btn-primary-gh">Ver Proyectos</a>
-                        <a href="https://www.linkedin.com/in/ramón-terraza" target="_blank" class="btn btn-outline-gh">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/jramonrt" target="_blank" class="btn btn-outline-gh">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                    <div class="hero-content">
+                        <span class="badge-role">Ingeniero de Sistemas</span>
+                        <h1 class="display-2 fw-bold mb-3">
+                            Ramón <span class="highlight">Terraza</span>
+                        </h1>
+                        <div class="subtitle-wrapper">
+                            <div class="subtitle-line"></div>
+                            <h2 class="h4 mb-4">Full Stack Developer</h2>
+                        </div>
+                        <p class="lead mb-5 description">
+                            Especializado en arquitecturas backend y frontend, sistemas de gestión y consumo de APIs. 
+                            Postgrado en Desarrollo de Software. Experiencia en arquitecturas cliente-servidor y bases de datos relacionales.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap hero-buttons">
+                            <a href="#experience" class="btn btn-primary-custom">
+                                <span>Ver Proyectos</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ramón-terraza" target="_blank" class="btn btn-outline-custom">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://github.com/jramonrt" target="_blank" class="btn btn-outline-custom">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="window-body">
+                                <code>
+                                    <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br>
+                                    &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string">"Ramón Terraza"</span>,<br>
+                                    &nbsp;&nbsp;<span class="code-property">role</span>: <span class="code-string">"Full Stack"</span>,<br>
+                                    &nbsp;&nbsp;<span class="code-property">skills</span>: [<span class="code-string">"Backend"</span>, <span class="code-string">"Frontend"</span>],<br>
+                                    &nbsp;&nbsp;<span class="code-property">status</span>: <span class="code-string">"Available"</span><br>
+                                    };
+                                </code>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
-            <h3 class="section-title">Perfil Profesional</h3>
-            <div class="card-gh p-4">
-                <p>
-                    Tengo una formación académica en Ingeniería de Sistemas, Informática y Ciencias de la Computación, 
+            <div class="section-header text-center mb-5">
+                <h3 class="section-title">Perfil Profesional</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-card">
+                <div class="card-decoration"></div>
+                <p class="about-text">
+                    Formación académica en Ingeniería de Sistemas, Informática y Ciencias de la Computación, 
                     complementada con un Postgrado en Diseño y Desarrollo de Software. Mi enfoque técnico se centra en la construcción 
-                    de sistemas web, utilizando lenguajes como Java, Python y PHP, integrando bases de datos relacionales (Como SQL Server, MySQL) y 
-                    consumo de APIs. Poseo habilidades en desarrollo frontend y backend, lo que me permite 
+                    de sistemas web, utilizando lenguajes como Java, Python y PHP, integrando bases de datos relacionales (SQL Server, MySQL) y 
+                    consumo de APIs. Habilidades en desarrollo frontend y backend que me permiten 
                     relacionarme con proyectos de manera integral, desde el servidor hasta la experiencia del usuario.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section-padding">
+    <!-- Projects Section -->
+    <section id="experience" class="section-padding section-dark">
         <div class="container">
-            <h3 class="section-title">Experiencia Práctica y proyectos relevantes</h3>
+            <div class="section-header text-center mb-5">
+                <h3 class="section-title">Proyectos Destacados</h3>
+                <div class="title-underline"></div>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card-gh h-100 p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <i class="fas fa-server text-accent fs-4"></i>
-                            <span class="badge-tech">PHP / SQL Server</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
                         </div>
-                        <h4>Sistemas Web de Gestión & LMS</h4>
-                        <p class="text-muted small">Desarrollo Full Stack</p>
-                        <p class="card-text">
-                            Desarrollo de plataforma de gestión educativa (LMS), sistema de votaciones y gestión de libros. 
+                        <div class="project-tags mb-3">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <h4 class="project-title">Sistemas Web de Gestión & LMS</h4>
+                        <p class="project-category">Desarrollo Full Stack</p>
+                        <p class="project-description">
+                            Plataforma de gestión educativa (LMS), sistema de votaciones y gestión de libros. 
                             Implementación con PHP y SQL Server en arquitectura cliente-servidor.
                         </p>
+                        <div class="project-overlay"></div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-gh h-100 p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <i class="fas fa-plane text-accent fs-4"></i>
-                            <span class="badge-tech">Python / JSON / AJAX</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
                         </div>
-                        <h4>Reservación de Vuelos & APIs</h4>
-                        <p class="text-muted small">Integración Backend</p>
-                        <p class="card-text">
+                        <div class="project-tags mb-3">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">AJAX</span>
+                        </div>
+                        <h4 class="project-title">Reservación de Vuelos & APIs</h4>
+                        <p class="project-category">Integración Backend</p>
+                        <p class="project-description">
                             Sistema web con integración de APIs externas para consulta y reserva en tiempo real.
-                            Consumo de datos JSON/AJAX de proyectos universitarios y manejo de datos dinámicos.
+                            Consumo de datos JSON/AJAX y manejo de datos dinámicos.
                         </p>
+                        <div class="project-overlay"></div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-gh h-100 p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <i class="fas fa-brain text-accent fs-4"></i>
-                            <span class="badge-tech">Python / RNN / CNN / MLP</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
                         </div>
-                        <h4>Modelos Predictivos</h4>
-                        <p class="text-muted small">Machine Learning</p>
-                        <p class="card-text">
+                        <div class="project-tags mb-3">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">RNN/CNN</span>
+                        </div>
+                        <h4 class="project-title">Modelos Predictivos</h4>
+                        <p class="project-category">Machine Learning</p>
+                        <p class="project-description">
                             Implementación de modelos predictivos básicos (RNN, CNN, MLP).
                             Procesamiento y análisis de datasets con Python.
                         </p>
+                        <div class="project-overlay"></div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-gh h-100 p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <i class="fas fa-gamepad text-accent fs-4"></i>
-                            <span class="badge-tech">JS / HTML5 / CSS3 / SQL</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
                         </div>
-                        <h4>Desarrollo Interactivo & Videojuegos</h4>
-                        <p class="text-muted small">Frontend Logic</p>
-                        <p class="card-text">
-                            Creación de videojuegos web integrados con base de datos utilizando motores gráficos 2D/3D como Construct 3 y RPG Maker.
+                        <div class="project-tags mb-3">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <h4 class="project-title">Desarrollo Interactivo & Videojuegos</h4>
+                        <p class="project-category">Frontend Logic</p>
+                        <p class="project-description">
+                            Creación de videojuegos web integrados con base de datos utilizando motores gráficos 2D/3D.
                         </p>
+                        <div class="project-overlay"></div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-gh h-100 p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <i class="fas fa-code text-accent fs-4"></i>
-                            <span class="badge-tech">Java / Python / Git</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <h4>Programas Ejecutables & Control de Versiones</h4>
-                        <p class="text-muted small">Desarrollo de Software</p>
-                        <p class="card-text">
-                            Desarrollo de aplicaciones ejecutables orientadas a resolución de problemas computacionales.
-                            Uso de Git para control de versiones y trabajo colaborativo en proyectos académicos.
+                        <div class="project-tags mb-3">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <h4 class="project-title">Programas Ejecutables & Control de Versiones</h4>
+                        <p class="project-category">Desarrollo de Software</p>
+                        <p class="project-description">
+                            Aplicaciones ejecutables orientadas a resolución de problemas computacionales.
+                            Uso de Git para control de versiones y trabajo colaborativo.
                         </p>
+                        <div class="project-overlay"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="section-padding">
         <div class="container">
-            <h3 class="section-title">Formación Académica</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold">Postgrado en Diseño y Desarrollo de Software</h5>
-                        <p class="text-accent mb-1">Universidad Galileo, Guatemala</p>
-                        <small class="text-muted">Enero 2025 - Noviembre 2025 | <strong>Finalizado</strong></small>
+            <div class="section-header text-center mb-5">
+                <h3 class="section-title">Formación Académica</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline-modern">
+                <div class="timeline-item-modern">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-modern">
+                        <div class="timeline-badge">Finalizado</div>
+                        <h5 class="timeline-title">Postgrado en Diseño y Desarrollo de Software</h5>
+                        <p class="timeline-institution">Universidad Galileo, Guatemala</p>
+                        <p class="timeline-date">Enero 2025 - Noviembre 2025</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold">Ingeniería de Sistemas, Informática y Ciencias de la Computación</h5>
-                        <p class="text-accent mb-1">Universidad Galileo, Guatemala</p>
-                        <small class="text-muted">Enero 2020 - Noviembre 2025 | <strong>Pensum Cerrado</strong></small>
+                <div class="timeline-item-modern">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-modern">
+                        <div class="timeline-badge">Pensum Cerrado</div>
+                        <h5 class="timeline-title">Ingeniería de Sistemas, Informática y Ciencias de la Computación</h5>
+                        <p class="timeline-institution">Universidad Galileo, Guatemala</p>
+                        <p class="timeline-date">Enero 2020 - Noviembre 2025</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold">Bachillerato con Orientación en Diseño Gráfico</h5>
-                        <p class="text-accent mb-1">Colegio Mixto Monte Carmelo</p>
-                        <small class="text-muted">Enero 2018 - Agosto 2019</small>
+                <div class="timeline-item-modern">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-modern">
+                        <h5 class="timeline-title">Bachillerato con Orientación en Diseño Gráfico</h5>
+                        <p class="timeline-institution">Colegio Mixto Monte Carmelo</p>
+                        <p class="timeline-date">Enero 2018 - Agosto 2019</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section-padding bg-darker">
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding section-dark">
         <div class="container">
-            <h3 class="section-title">Competencias Técnicas</h3>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3 text-white">Backend & Bases de Datos</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">MySQL</span>
+            <div class="section-header text-center mb-5">
+                <h3 class="section-title">Stack Técnico</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h5>Backend & Bases de Datos</h5>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">SQL Server</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3 text-white">Frontend</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">HTML5/CSS3</span>
-                        <span class="skill-tag">AJAX</span>
+                <div class="col-md-4">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-code skill-icon"></i>
+                            <h5>Frontend</h5>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Angular</span>
+                            <span class="skill-badge">HTML5/CSS3</span>
+                            <span class="skill-badge">AJAX</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3 text-white">Herramientas & ML</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">RNN/CNN/MLP</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">APIs REST</span>
+                <div class="col-md-4">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-tools skill-icon"></i>
+                            <h5>Herramientas & ML</h5>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">RNN/CNN/MLP</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">APIs REST</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-5 text-center border-top border-secondary">
+    <!-- Contact Section -->
+    <footer id="contact" class="contact-section">
         <div class="container">
-            <h2 class="h4 mb-4">Contacto</h2>
-            <div class="d-flex justify-content-center gap-4 mb-4">
-                <a href="https://www.linkedin.com/in/ramón-terraza" class="footer-link">LinkedIn</a>
-                <a href="https://github.com/jramonrt" class="footer-link">GitHub</a>
-                <a href="#" id="email-link" class="footer-link">Contactar por Email
+            <div class="section-header text-center mb-5">
+                <h3 class="section-title">Contacto</h3>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/ramón-terraza" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/jramonrt" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" id="email-link" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
                 </a>
             </div>
-            <span id="email-feedback" class="small text-accent ms-2" style="opacity: 0; transition: opacity 0.3s;">¡Copiado!</span>
-            <br>
-            <br>
-            <p class="small text-muted mb-0">&copy; 2026 Ramón Terraza. Todos los derechos reservados.</p>
+            <div class="text-center mt-4">
+                <span id="email-feedback" class="email-feedback">¡Email copiado al portapapeles!</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ramón Terraza</p>
+            </div>
         </div>
     </footer>
 
